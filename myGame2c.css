@@ -1,0 +1,35 @@
+body{
+    margin: 0%;
+}
+.CanvasCharacterOne{
+    background-color: red;
+}
+.CenterCanvasCharacterOne{
+    position: absolute;
+    left: 83px
+}
+.CanvasCharacterTwo{
+    background-color: blue;
+}
+.CenterCanvasCharacterTwo{
+    position: absolute;
+    left: 83px
+}
+.CenterButtonBlue{
+    position: absolute;
+    left: 500px;
+    top: 200px;
+}
+.ButtonBlue{
+    background-color: red;
+    color: white;
+}
+.CenterButtonRed{
+    position: absolute;
+    left: 500px;
+    top: 300px;
+}
+.ButtonRed{
+    background-color: blue;
+    color: white;
+}

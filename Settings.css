@@ -1,0 +1,270 @@
+body{
+    margin: 0%;
+    padding: 0%;
+    font-family: "Audiowide";
+    background-color: skyblue;
+}
+button{
+    cursor: pointer;
+    font-family: "Audiowide";
+}
+div{
+    position: absolute;
+}
+.wrapBackSettings{
+    top: 30px;
+    left: 90px;
+}
+.wrapCanvasSettings{
+    left: 83px;
+    top: 23px;
+}
+.wrapTittleSettings{
+    top: 5px;
+    left: 583px;
+}
+.wrapLineTittleSettings{
+    left: 583px;
+    top: 75px;
+}
+.wrapTittleVolume{
+    left: 190px;
+    top: 100px;
+}
+.wrapTittleMusicVolume{
+    left: 200px;
+    top: 200px;
+}
+.wrapVolumeMusic{
+    left: 360px;
+    top: 205px;
+}
+.wrapMusicVolume{
+    left: 230px;
+    top: 300px;
+}
+.wrapTittleSoundVolume{
+    left: 200px;
+    top: 400px;
+}
+.wrapVolumeSound{
+    left: 360px;
+    top: 405px;
+}
+.wrapSoundVolume{
+    left: 230px;
+    top: 500px;
+}
+.wrapLineSET{
+    top: 150px;
+    left: 678px;
+}
+.wrapTittleController{
+    left: 750px;
+    top: 100px;
+}
+.wrapTittleKeyArrow{
+    left: 1080px;
+    top: 200px;
+}
+.wrapKEYButton{
+    left: 800px;
+    top: 200px;
+}
+.wrapKeySelect{
+    left: 1080px;
+    top: 270px;
+}
+.wrapTittleWASD{
+    left: 1080px;
+    top: 400px;
+}
+.wrapWASDButton{
+    left: 800px;
+    top: 400px;
+}
+.wrapWASDSelect{
+    left: 1080px;
+    top: 470px;
+}
+.wasdSelect{
+    color: white;
+    background-color: black;
+    border-top: 1px skyblue groove;
+    border-left: 1px blue groove;
+    border-right: 1px blue groove;
+    border-bottom: 1px darkblue groove;
+    border-radius: 5px;
+    width: 100px;
+    height: 30px;
+    font-size: 15px;
+}
+.WASDButton{
+    border: 10px solid black;
+}
+input[type=range]{
+    -webkit-appearance: none;
+    width: 300px;
+    border-radius: 10px;
+}
+.SoundVolume[type=range]::-webkit-slider-runnable-track{
+    background-image: url("Parameter2.png");
+    height: 20px;
+}
+.SoundVolume[type=range]:focus::-webkit-slider-runnable-track {
+    background-image: url("Parameter1.png");
+    height: 20px;
+}
+.SoundVolume[type=range]:focus::-webkit-slider-thumb{
+    -webkit-appearance: none;
+    height: 40px;
+    width: 40px;
+    cursor: pointer;
+    background-image: url("ButtonSoundH.png");
+    margin-top: -10px;
+}
+.SoundVolume[type=range]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    height: 40px;
+    width: 40px;
+    cursor: pointer;
+    background-image: url("ButtonSound.png");
+    margin-top: -10px;
+    
+}
+.SoundVolume[type=range]:focus {
+    outline: none;
+}
+.MusicVolume[type=range]::-webkit-slider-runnable-track{
+    background-image: url("Parameter2.png");
+    height: 20px;
+}
+.MusicVolume[type=range]:focus::-webkit-slider-runnable-track {
+    background-image: url("Parameter1.png");
+    height: 20px;
+}
+.MusicVolume[type=range]:focus::-webkit-slider-thumb{
+    -webkit-appearance: none;
+    height: 40px;
+    width: 40px;
+    cursor: pointer;
+    background-image: url("ButtonMusicH.png");
+    margin-top: -10px;
+}
+.MusicVolume[type=range]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    height: 40px;
+    width: 40px;
+    cursor: pointer;
+    background-image: url("ButtonMusic.png");
+    margin-top: -10px;
+    
+}
+.MusicVolume[type=range]:focus {
+    outline: none;
+}
+.TittleWASD{
+    color: white;
+    background-color: black;
+    border-top: 1px skyblue groove;
+    border-left: 1px blue groove;
+    border-right: 1px blue groove;
+    border-bottom: 1px darkblue groove;
+    border-radius: 5px;
+    width: 150px;
+    height: 50px;
+    font-size: 20px;
+}
+.keySelect{
+    color: white;
+    background-color: black;
+    border-top: 1px skyblue groove;
+    border-left: 1px blue groove;
+    border-right: 1px blue groove;
+    border-bottom: 1px darkblue groove;
+    border-radius: 5px;
+    width: 100px;
+    height: 30px;
+    font-size: 15px;
+}
+.KEYButton{
+    border: 10px solid blue;
+}
+.TittleKeyArrow{
+    color: white;
+    background-color: blue;
+    border-top: 1px skyblue groove;
+    border-left: 1px blue groove;
+    border-right: 1px blue groove;
+    border-bottom: 1px darkblue groove;
+    border-radius: 5px;
+    width: 150px;
+    height: 50px;
+    font-size: 20px;
+}
+.TittleController{
+    color: skyblue;
+    font-size: 35px;
+    border-bottom: 5px groove cyan;
+}
+.LineSET{
+    color: white;
+}
+.VolumeSound{
+    font-size: 25px;
+    color: white ;
+}
+.TittleSoundVolume{
+    font-size: 30px;
+    color: white;
+}
+.VolumeMusic{
+    font-size: 25px;
+    color: white;
+}
+.TittleMusicVolume{
+    font-size: 30px;
+    color: white;
+}
+.TittleVolume{
+    color: white;
+    color: skyblue;
+    font-size: 35px;
+    border-bottom: 5px groove cyan;
+}
+.LineTittleSettings{
+    background-color: white;
+    width: 200px;
+    border-radius: 10px;
+    height: 1px;
+    border-top: white 2px solid;
+    border-bottom: grey 3px solid;
+}
+.TittleSettings{
+    color: white;
+    font-size: 40px;
+    text-align: center;
+    width: 200px;
+}
+.CanvasSettings{
+    background-image: url("BackgroundMenu.png");
+}
+.BackSettings{
+    background-image: url("BackButton.png");
+    width: 55px;
+    height: 55px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.BackSettings:hover{
+    background-image: url("BackButton Hover.png");
+    width: 55px;
+    height: 55px;
+    border-radius: 5px;
+}
+.BackSettings:active{
+    background-image: url("BackButton.png");
+    width: 55px;
+    height: 55px;
+    border-radius: 5px;
+}

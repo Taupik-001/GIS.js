@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Document</title>
+  <style>
+    body{
+      margin: 0%;
+    }
+    .canvasSettingVolume{
+      background-image: url("BackgroundMenu.png");
+    }
+    .centercanvasSettingVolume{
+      position: absolute;
+      left: 83px;
+    }
+    .centerOnMusic{
+      position: absolute;
+      top: 500px;
+      left: 400px;
+    }
+    .centerOfSound{
+      position: absolute;
+      top: 500px;
+      left: 300px;
+    }
+    .centerBackButton{
+      position: absolute;
+      left: 100px;
+      top: 50px;
+    }
+    .centerGoButton{
+      position: absolute;
+      left: 100px;
+      top: 100px;
+    }
+    .centerMusicAlert{
+      position: absolute;
+      left: 200px;
+      top: 100px;
+      color: white;
+    }
+    .centerControlSound{
+      position: absolute;
+      left: 200px;
+      top: 100px;
+    }
+    .Volume{
+      position: absolute;
+      width: 300px;
+      /* color: black; */
+    }
+    .Volume[type=range]{
+      -webkit-appearance: none;
+      border-radius: 10px;
+      color: black;
+}
+
+.Volume[type=range]::-webkit-slider-runnable-track {
+    height: 20px;
+    background-image: url("Parameter1.png");
+    color: blue;
+    /* padding: initial; */
+    margin: 2px;
+    border: none;
+    border-radius: 3px;
+}
+
+.Volume[type=range]:focus::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    border: none;
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    background-image: url("ButtonSound.png");
+    margin-top: -4px;
+}
+.Volume[type=range]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    border: none;
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    background-image: url("ButtonMusic.png");
+    margin-top: -4px;
+}
+
+/* .Volume[type=range]:focus {
+    outline: none;
+} */
+
+.Volume[type=range]:focus::-webkit-slider-runnable-track {
+  /* background-image: url("Parameter2.png"); */
+    /* color: -internal-light-dark(rgb(16, 16, 16), rgb(255, 255, 255)); */
+    color: blue;
+    padding: initial;
+    margin: 2px;
+}
+  </style>
+</head>
+<body onload="playmusicao()">
+  <button onclick="playmusicao()">tet</button>
+  <button onclick="stopmu()">tes</button>
+  <div class="centercanvasSettingVolume" id="wrapSettingVolumeCanvas">
+    <canvas class="canvasSettingVolume" width="1200" height="600"></canvas>
+  </div>
+  <div class="centerBackButton">
+    <button onclick="WebSettingShow()" id="showbb">Test Show</button>
+  </div>
+  <div class="centerGoButton">
+    <button onclick="WebSetttingHide()" id="hidebb">Test Hide</button>
+  </div>
+  <div class="centerMusicAlert" id="wrapMusicAlert">
+    <h2 class="MusicAlert" id="MusicAlert">Your Sound Is ON</h2>
+  </div>
+  <div class="centerOnMusic" id="wrapOnMusic">
+    <button id="PlayMusic" onclick="playtheSoundMusic()">Play Music</button>
+  </div>
+  <div class="centerOfSound" id="wrapOffMusic">
+    <button id="MuteMusic" onclick="stoptheSoundMusic()">Mute Music</button>
+  </div>
+  <div>
+    <h2 class="SoundAlert" id="SoundAlert"></h2>
+  </div>
+  <div>
+    <h1 id="testa">1</h1>
+  </div>
+  <div class="centerControlSound" id="wrapControlSound">
+    <input class="Volume" id="volumemusic" onmousemove="valueVolume()" type="range" min="0.00" max="1.00" value="0.50" step="0.01">
+  </div>
+  <script src="MySettingsGame.js"></script>
+</body>
+</html>

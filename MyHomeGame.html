@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My Home</title>
+        <link rel="stylesheet" href="Settings.css">
+        <link rel="stylesheet" href="MyHomeGame.css">
+</head>
+<body onload="WebHomeShow()">
+    <div class="centercanvasHome" id="wrapCanvas">
+        <canvas id="HomeCanvas" class="canvasHome" width="1200" height="600"></canvas>
+    </div>
+
+    <div class="wrapCanvasSettings">
+        <canvas class="CanvasSettings" id="CanvasSettings" width="1200px" height="600px"></canvas>
+    </div>
+
+    
+    <!-- Setting -->
+    <div class="wrapBackSettings">
+        <button class="BackSettings" id="BackSettings" onclick="HideSettings()"></button>
+    </div>
+    <div class="wrapTittleSettings">
+        <h1 class="TittleSettings" id="TittleSettings">Settings</h1>
+    </div>
+    <div class="wrapLineTittleSettings">
+        <hr class="LineTittleSettings" id="LineTittleSettings">
+    </div>
+    <div class="wrapTittleVolume">
+        <h2 class="TittleVolume" id="TittleVolume">Volume Audio Game</h2>
+    </div>
+    <div class="wrapTittleMusicVolume">
+        <h3 class="TittleMusicVolume" id="TittleMusicVolume">Music</h3>
+    </div>
+    <div class="wrapMusicVolume">
+        <input class="MusicVolume" id="MusicVolume" onmousemove="volumeMusic()" type="range" min="0.00" max="1.00" value="0.50" step="0.01">
+    </div>
+    <div class="wrapVolumeMusic">
+        <h4 class="VolumeMusic" id="VolumeMusic">0.5%</h4>
+    </div>
+    <div class="wrapTittleSoundVolume">
+        <h3 class="TittleSoundVolume" id="TittleSoundVolume">Sound</h3>
+    </div>
+    <div class="wrapSoundVolume">
+        <input class="SoundVolume" id="SoundVolume" onmousemove="volumeSound()" type="range" min="0.00" max="1.00" value="0.50" step="0.01">
+    </div>
+    <div class="wrapVolumeSound">
+        <h4 class="VolumeSound" id="VolumeSound">0.5%</h4>
+    </div>
+    <div class="wrapLineSET">
+        <img class="LineSET" id="LineSET" src="SetLine450.png">
+    </div>
+    <div class="wrapTittleController">
+        <h2 class="TittleController" id="TittleController">Controller On Keyboard</h2>
+    </div>
+    <div class="wrapTittleKeyArrow">
+        <button class="TittleKeyArrow" id="TittleKeyArrow" onclick="KeyArrow()">Key Arrow</button>
+    </div>
+    <div class="wrapKEYButton">
+        <button class="KEYButton" id="KEYButton" onclick="KeyArrow()"><img id="KEYButton" src="KEY.png"></button>
+    </div>
+    <div class="wrapKeySelect">
+        <button class="keySelect" id="keySelect" onclick="KeyArrow()">Selected</button>
+    </div>
+    <div class="wrapTittleWASD">
+        <button class="TittleWASD" id="TittleWASD" onclick="KeyWasd()">WASD</button>
+    </div>
+    <div class="wrapWASDButton">
+        <button class="WASDButton" id="WASDButton" onclick="KeyWasd()"><img id="WASDButton" src="WASD.png"></button>
+    </div>
+    <div class="wrapWASDSelect">
+        <button class="wasdSelect" id="wasdSelect" onclick="KeyWasd()">Select</button>
+    </div>
+
+
+
+    <!-- Main Menu -->
+    <div class="centerTittle" id="wrapTittle">
+        <h1 id="TittleGame">Title Game</h1>
+    </div>
+    <div class="centerPlay" id="wrapPlay">
+        <button id="PlayButton" onclick="">Play Game</button>
+    </div>
+    <div class="centerInsertCode" id="wrapInsertCode">
+        <button id="InsertCodeGame" onclick="">Choose Character</button>
+    </div>
+    <div class="centerSettings" id="wrapSettings">
+        <button id="SettingsButton" onclick="HideWhenSetting()">Settings</button>
+    </div>
+    <div class="centerAbout" id="wrapAbout">
+        <button id="AboutButton" onclick="">About</button>
+    </div>
+    <div class="centerMoreGame" id="wrapMoreGame">
+        <button id="MoreGameButton" onclick="">More Game</button>
+    </div>
+    <div class="centerFacebook" id="wrapFacebook">
+        <button id="FacebookButton" onclick="window.location.href = 'https://ide.geeksforgeeks.org';"><img src="https://bit.ly/3BF9FD7" height ="10" width="20"/>Facebook</button>
+    </div>
+    <div class="centerInstagram" id="wrapInstagram">
+        <button id="InstagramButton" onclick="window.location.href = 'https://ide.geeksforgeeks.org';"><img src="https://bit.ly/3BF9FD7" height ="10" width="20"/>Instagram</button>
+    </div>
+
+
+    <script src="Settings.js"></script>
+    <script src="MyHomeGame.js"></script>
+</body>
+</html>

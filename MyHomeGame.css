@@ -1,0 +1,63 @@
+body{
+    margin: 0%;
+}
+.canvasHome{
+    background-image: url("Theme.png");
+}
+.centercanvasHome{
+    position: absolute;
+    left: 83px;
+}
+.centercanvasPlay{
+    position: absolute;
+    left: 83px;
+}
+.centerTittle{
+    position: absolute;
+    left: 500px;
+}
+.centerPlay{
+    position: absolute;
+    left: 200px;
+    top: 100px;
+}
+.centerInsertCode{
+    position: absolute;
+    left: 200px;
+    top: 150px;
+}
+.centerSettings{
+    position: absolute;
+    left: 200px;
+    top: 200px;
+}
+.centerAbout{
+    position: absolute;
+    left: 200px;
+    top: 250px;
+}
+.centerMoreGame{
+    position: absolute;
+    left: 200px;
+    top: 300px;
+}
+.centerFacebook{
+    position: absolute;
+    left: 100px;
+    top: 600px;
+}
+.centerInstagram{
+    position: absolute;
+    left: 50px;
+    top: 600px;
+}
+.centerBackButton{
+    position: absolute;
+    left: 100px;
+    top: 50px;
+}
+.centerGoButton{
+    position: absolute;
+    left: 100px;
+    top: 100px;
+}

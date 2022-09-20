@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Document</title>
+    <style>
+        .container{
+            display: flex;
+            justify-content: center;
+        }
+        button{
+            width: 200px;
+            height: 50px;
+            font-size: 150%;
+        }
+        .showDialog{
+            width: 250px;
+            height: 400px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            font-size: 150%;
+            gap: 15px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <button id="open">Open</button>
+        <dialog id="modal">
+            <button>Resume</button>
+            <button>Main Menu</button>
+            <h2>dialog</h2>
+            <button id="close">Close</button>
+        </dialog>
+    </div>
+    <script>
+        let dialog = document.getElementById("modal")
+        let close = document.getElementById("close")
+        let open = document.getElementById("open")
+
+        open.onclick = function(){
+            dialog.showModal()
+            dialog.classList.toggle("showDialog")
+        }
+        close.onclick = function(){
+            dialog.close()
+            dialog.classList.toggle("showDialog")
+        }
+    </script>
+</body>
+</html>

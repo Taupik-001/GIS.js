@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Snake 1</title>
+    <link rel="stylesheet" href="Game 1.css">
+</head>
+<body onload="gameStart()">
+    <!-- onload="playtheGame()" -->
+    <table>
+        <!-- <div id="test"></div> -->
+        <tr>
+            <td>
+            </td>
+            <td>
+                <div id="gameContainer"">
+                    <canvas id="gameBoard" width="500" height="500"></canvas>
+                </div>
+            </td>
+            <td>
+                <div>
+                    <p id="scoreTextp">Your Score: </p>
+                    <p id="scoreText">0</p>
+                    <div id="restart"></div>
+                    <div class="timer">
+                        <span id="hours"></span>
+                        <span id="minutes"></span>
+                        <span id="seconds"></span>
+                    </div>
+                </div>
+            </td>
+        </tr>
+    </table>
+
+    <script src="Game 1.js"></script>
+
+</body>
+</html>
