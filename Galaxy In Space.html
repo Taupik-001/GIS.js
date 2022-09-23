@@ -1,9 +1,138 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>G.I.S.</title>
+    <title>G. I. S.</title>
+        <link href='https://fonts.googleapis.com/css?family=Audiowide' rel='stylesheet'>
+        <link rel="stylesheet" href="Galaxy In Space.css">
+        <link rel="stylesheet" href="Play Game/PlayGame.css">
+        <link rel="stylesheet" href="Choose Character/ChooseCharacter.css">
+        <link rel="stylesheet" href="Settings/Settings.css">
+        <link rel="stylesheet" href="About/About.css">
+        <link rel="stylesheet" href="More Game/MoreGame.css">
 </head>
-<body>
+<body onload="MainMenu()">
+    <!-- Main Menu -->
+    <div class="WrapCanvasHome">
+        <canvas class="CanvasHome" id="CanvasHome" width="1200px" height="600px"></canvas>
+    </div>
+    <div class="WrapTittleGame">
+        <h1 class="TittleGame" id="TittleGame">Title Game</h1>
+    </div>
+    <div class="WrapPlayGame">
+        <button class="PlayGame" id="PlayGame">Play Game</button>
+    </div>
+    <div class="WrapChooseCharacter">
+        <button class="ChooseCharacter" id="ChooseCharacter">Choose Character</button>
+    </div>
+    <div class="WrapSettings">
+        <button class="Settings" id="Settings">Settings</button>
+    </div>
+    <div class="WrapAbout">
+        <button class="About" id="About">About</button>
+    </div>
+    <div class="WrapMoreGame">
+        <button class="MoreGame" id="MoreGame">More Game</button>
+    </div>
     
+    <!-- Play Game -->
+    <div class="WrapCanvasPlayGame">
+        <canvas class="CanvasPlayGame" id="CanvasPlayGame" width="1200px" height="600px"></canvas>
+    </div>
+
+    <!-- Choose Character -->
+    <div class="WrapCanvasChooseCharacter">
+        <canvas class="CanvasChooseCharacter" id="CanvasChooseCharacter" width="1200px" height="600px"></canvas>
+    </div>
+
+    <!-- Setting -->
+    <div class="WrapCanvasSettings">
+        <canvas class="CanvasSettings" id="CanvasSettings" width="1200px" height="600px"></canvas>
+    </div>
+    <div class="WrapTittleSettings">
+        <h1 class="TittleSettings" id="TittleSettings">Settings</h1>
+    </div>
+    <div class="WrapLineTittleSettings">
+        <hr class="LineTittleSettings" id="LineTittleSettings">
+    </div>
+    <div class="WrapTittleVolume">
+        <h2 class="TittleVolume" id="TittleVolume">Volume Audio Game</h2>
+    </div>
+    <div class="WrapTittleMusicVolume">
+        <h3 class="TittleMusicVolume" id="TittleMusicVolume">Music</h3>
+    </div>
+    <div class="WrapMusicVolume">
+        <input class="MusicVolume" id="MusicVolume" onmousemove="volumeMusic()" type="range" min="0.00" max="1.00" value="0.50" step="0.01">
+    </div>
+    <div class="WrapVolumeMusic">
+        <h4 class="VolumeMusic" id="VolumeMusic">0.5%</h4>
+    </div>
+    <div class="WrapTittleSoundVolume">
+        <h3 class="TittleSoundVolume" id="TittleSoundVolume">Sound</h3>
+    </div>
+    <div class="WrapSoundVolume">
+        <input class="SoundVolume" id="SoundVolume" onmousemove="volumeSound()" type="range" min="0.00" max="1.00" value="0.50" step="0.01">
+    </div>
+    <div class="WrapVolumeSound">
+        <h4 class="VolumeSound" id="VolumeSound">0.5%</h4>
+    </div>
+    <div class="WrapLineSET">
+        <img class="LineSET" id="LineSET" src="Settings/Line.png">
+    </div>
+    <div class="WrapTittleController">
+        <h2 class="TittleController" id="TittleController">Controller On Keyboard</h2>
+    </div>
+    <div class="WrapTittleKeyArrow">
+        <button class="TittleKeyArrow" id="TittleKeyArrow" onclick="KeyArrow()">Key Arrow</button>
+    </div>
+    <div class="WrapKEYButton">
+        <button class="KEYButton" id="KEYButton" onclick="KeyArrow()"><img id="KEYButton" src="Settings/KEY.png"></button>
+    </div>
+    <div class="WrapKeySelect">
+        <button class="keySelect" id="keySelect" onclick="KeyArrow()">Selected</button>
+    </div>
+    <div class="WrapTittleWASD">
+        <button class="TittleWASD" id="TittleWASD" onclick="KeyWasd()">WASD</button>
+    </div>
+    <div class="WrapWASDButton">
+        <button class="WASDButton" id="WASDButton" onclick="KeyWasd()"><img id="WASDButton" src="Settings/WASD.png"></button>
+    </div>
+    <div class="WrapWASDSelect">
+        <button class="wasdSelect" id="wasdSelect" onclick="KeyWasd()">Select</button>
+    </div>
+    <div class="WrapBackSettings">
+        <button class="BackSettings" id="BackSettings" onclick="MainMenu()"></button>
+    </div>
+
+
+    <!-- About -->
+    <div class="WrapAboutPage0ne">
+        <canvas class="AboutOne" id="AboutOne" width="1200px" height="600px"></canvas>
+    </div>
+    <div class="WrapAboutPageTwo">
+        <canvas class="AboutTwo" id="AboutTwo" width="1200px" height="600px"></canvas>
+    </div>
+    <div class="WrapAboutPageThree">
+        <canvas class="AboutThree" id="AboutThree" width="1200px" height="600px"></canvas>
+    </div>
+    
+    <!-- More Game -->
+    <div class="WrapCanvasMoreGame">
+        <canvas class="CanvasMoreGame" id="CanvasMoreGame" width="1200px" height="600px"></canvas>
+    </div>
+
+
+
+    
+    <script src="Galaxy In Space.js"></script>
+    <script src="Play Game/PlayGame.js"></script>
+    <script src="Choose Character/ChooseCharacter.js"></script>
+    <script src="Settings/Settings.js"></script>
+    <script src="About/About.js"></script>
+    <script src="More Game/MoreGame.js"></script>
+
+
+    <div class="PositionCanvasLimit">
+        <canvas class="CanvasLimit"></canvas>
+    </div>
 </body>
 </html>

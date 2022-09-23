@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<title>Objeto Window</title>
+	<meta charset="UTF8"/>
+    <style>
+    .bigBox button{
+        width: 120px;
+      }
+      
+      .bigBox.disabled button#start,
+      .bigBox.disabled button#restart,
+      .bigBox.disabled button#pause,
+      .bigBox.disabled button#stop,
+      button.disabled
+      {
+          cursor: not-allowed;
+          pointer-events: none;
+          color: #666666;
+          background-color: #eeeeee;
+      }</style>
+	<body onload="loadWindow()">
+        <canvas width="1200" height="600" id="PlayCanvas"></canvas>
+		<div class="bigBox">
+            <button id="start"type="button" name="button">START</button>
+            <button id="desactivar"type="button" name="button">DESACTIVAR</button>
+            <button id="restart"type="button" name="button" class="disabled">RESTART</button>
+            <button id="pause"type="button" name="button" class="disabled">PAUSAR</button>
+            <button id="stop"type="button" name="button" class="disabled">STOP</button>
+          </div>
+          
+          <div id="result"></div>
+
+		
+		<script>
+		function loadWindow(){
+            jetKey = new property(1201, 0, 80, 120, "TheJet.png", "image")
+            LevelOne = new property(0, 0, 1200, 600, "Level1.png", "background")
+            testObstacle = new property(100, 200, 30, 50, "blue")
+        }
+		let count = 0;
+        let bigBox = document.getElementsByClassName('bigBox')[0];
+        let counter;
+
+// Add events handlers
+document.getElementById('start').addEventListener('click', start);
+document.getElementById('desactivar').addEventListener('click', desactivar);
+document.getElementById('restart').addEventListener('click', restart);
+document.getElementById('pause').addEventListener('click', pause);
+document.getElementById('stop').addEventListener('click', stop);
+
+function timer(){
+  count++;
+  result.innerText = count;
+  LevelOneContent()
+}
+
+function start(){
+  if (counter) clearInterval(counter)
+  counter = setInterval(timer, 10);
+  this.classList.add('disabled');
+  document.getElementById('pause').classList.remove('disabled');
+  document.getElementById('stop').classList.remove('disabled');
+}
+
+function desactivar(){
+  bigBox.classList.toggle('disabled');
+  this.innerText = bigBox.classList.contains('disabled')
+    ? 'ACTIVAR' : 'DESACTIVAR';
+}
+
+function pause(){
+  bigBox.classList.toggle('paused');
+  if (bigBox.classList.contains('paused')){
+    clearInterval(counter);
+    this.innerText = 'REANUDAR';
+  }
+  else{
+    if (counter) clearInterval(counter);
+    counter = setInterval(timer, 10);
+    this.innerText = 'PAUSAR';
+  }
+}
+
+function stop(){
+  if (counter) clearInterval(counter);
+  count = 0;
+  loadWindow()
+  document.getElementById('pause').classList.add('disabled');
+  bigBox.classList.remove('paused');
+  document.getElementById('pause').innerText = 'PAUSAR';
+  document.getElementById('restart').classList.remove('disabled');
+  this.classList.add('disabled');
+}
+
+function restart(){
+  if (counter) clearInterval(counter);
+  counter = setInterval(timer, 10);
+  LevelOneContent()
+  document.getElementById('pause').classList.remove('disabled');
+  document.getElementById('stop').classList.remove('disabled');
+  this.classList.add('disabled');
+}
+		</script>
+        <script src="MyGame.js"></script>
+	</body>
+</head>
+
+</html> 

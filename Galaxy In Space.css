@@ -1,0 +1,84 @@
+body{
+    margin: 0%;
+    padding: 0%;
+    font-family: "Audiowide";
+    background-color: skyblue;
+    /* overflow: hidden; */
+}
+button{
+    cursor: pointer;
+    font-family: "Audiowide";
+}
+div{
+    position: absolute;
+}
+
+/* Canvas Home */
+.WrapCanvasHome{
+    left: 83px;
+    top: 23px;
+}
+.CanvasHome{
+    background-image: url("Background Main Menu.png");
+}
+
+/* Tittle Game */
+.WrapTittleGame{
+    left: 500px;
+}
+.TittleGame{
+    color: white;
+}
+
+/* Play Game */
+.WrapPlayGame{
+    left: 200px;
+    top: 100px;
+}
+.PlayGame{
+    color: black;
+}
+
+/* Choose Character */
+.WrapChooseCharacter{ 
+    left: 200px;
+    top: 150px;
+}
+.ChooseCharacter{
+    color: black;
+}
+
+/* Settings */
+.WrapSettings{
+    left: 200px;
+    top: 200px;
+}
+.Settings{
+    color: black;
+}
+
+/* About */
+.WrapAbout{
+    left: 200px;
+    top: 250px;
+}
+.About{
+    color: black;
+}
+
+/* More Game */
+.WrapMoreGame{
+    left: 200px;
+    top: 300px;
+}
+.MoreGame{
+    color: black;
+}
+
+/* Canvas Limit */
+.PositionCanvasLimit{
+    top: 5000px;
+}
+.CanvasLimit{
+    background-color: black;
+}

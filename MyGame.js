@@ -2,12 +2,18 @@
 // var timer  = document.getElementById("timer")
 // var time = 0
 // var myInterval = -1
-// myclearinterval = clearInterval(Interterval)
+// // myclearinterval = clearInterval(myInterval)
 // button.addEventListener("click", function(event){
 //     if(myInterval == -1){
 //         button.innerHTML = "Pause"
+//         jetKey = new property(1201, 0, 80, 120, "TheJet.png", "image")
+//         LevelOne = new property(0, 0, 1200, 600, "Level1.png", "background")
+//         testObstacle = new property(100, 200, 30, 50, "blue")
 //         myInterval = setInterval(function(){
-//             MycontentGame()
+//             LevelOneContent()
+//             // LevelOneRunning()
+//             // time++
+//             // timer.innerHTML = time
 //         }, 10)
 //     }else {
 //         button.innerHTML = "Start"
@@ -15,6 +21,7 @@
 //         myInterval = -1
 //     }
 // })
+
 let hero = document.getElementById("Hero")
 let control = document.getElementById("Control")
 function buttonKey(){
@@ -423,22 +430,22 @@ function LevelOneContent(){
     testObstacle.update()
     ///pergerakan obstacle
     // jet.goingY = 1
-    if(hero.innerHTML == "JET" && control.innerHTML == "KEY"){
+    // if(hero.innerHTML == "JET" && control.innerHTML == "KEY"){
         jetKey.movement()
         jetKey.update()
-    }
-    else if(hero.innerHTML == "JET" && control.innerHTML == "WASD"){
-        jetWasd.movement()
-        jetWasd.update()
-    }
-    else if(hero.innerHTML == "ROCKET" && control.innerHTML == "KEY"){
-        rocketKey.movement()
-        rocketKey.update()
-    }
-    else if(hero.innerHTML == "ROCKET" && control.innerHTML == "WASD"){
-        rocketWasd.movement()
-        rocketWasd.update()
-    }
+    // }
+    // else if(hero.innerHTML == "JET" && control.innerHTML == "WASD"){
+    //     jetWasd.movement()
+    //     jetWasd.update()
+    // }
+    // else if(hero.innerHTML == "ROCKET" && control.innerHTML == "KEY"){
+    //     rocketKey.movement()
+    //     rocketKey.update()
+    // }
+    // else if(hero.innerHTML == "ROCKET" && control.innerHTML == "WASD"){
+    //     rocketWasd.movement()
+    //     rocketWasd.update()
+    // }
 }
 function LevelTwoContent(){
     clearMycontentGame()
