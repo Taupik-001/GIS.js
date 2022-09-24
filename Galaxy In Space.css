@@ -73,12 +73,21 @@ div{
 }
 .MoreGame{
     color: black;
+    cursor: not-allowed;
+    pointer-events: none;
 }
 
-/* Canvas Limit */
+/* Canvas Limit Down */
 .PositionCanvasLimit{
     top: 5000px;
 }
 .CanvasLimit{
+    background-color: black;
+}
+/* Canvas Limit Right */
+.PositionCanvasLimited{
+    left: 5000px;
+}
+.CanvasLimited{
     background-color: black;
 }

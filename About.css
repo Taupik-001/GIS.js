@@ -1,0 +1,185 @@
+/* Page One About */
+/* Canvas Page One */
+.WrapAboutPage0ne{
+    top: 2607px;
+    left: 83px;
+}
+.AboutOne{
+    background-image: url("AboutPage1.png");
+}
+/* Button Home */
+.WrapHomeBtnOne{
+    top: 2620px;
+    left: 100px;
+}
+.HomeBtnOne{
+    color: transparent;
+    background-color: transparent;
+    border: hidden;
+    width: 60px;
+    height: 63px;
+    background-image: url("HomeButton.png");
+}
+/* Button Next */
+.WrapNextBtnOne{
+    left: 1169px;
+    top: 3145px;
+}
+.NextBtnOne{
+    color: transparent;
+    background-color: transparent;
+    border: hidden;
+    width: 100px;
+    height: 50px;
+    background-image: url("NEXTBTN.png");
+}
+.NextBtnOne:hover{
+    color: transparent;
+    background-color: transparent;
+    border: hidden;
+    width: 100px;
+    height: 50px;
+    background-image: url("NEXTBTNH.png");
+}
+.NextBtnOne:active{
+    color: transparent;
+    background-color: transparent;
+    border: hidden;
+    width: 100px;
+    height: 50px;
+    background-image: url("NEXTBTNA.png");
+}
+
+
+/* Page Two About */
+/* Canvas Page Two */
+.WrapAboutPageTwo{
+    top: 2607px;
+    left: 1449px;
+}
+.AboutTwo{
+    background-image: url("AboutPage3.png");
+}
+/* Home Button */
+.WrapHomeBtnTwo{
+    top: 2620px;
+    left: 1466px;
+}
+.HomeBtnTwo{
+    color: transparent;
+    background-color: transparent;
+    border: hidden;
+    width: 60px;
+    height: 63px;
+    background-image: url("HomeButton.png");
+}
+/* Back Button */
+.WrapBackBtnOne{
+    top: 3145px;
+    left: 1464px;
+}
+.BackBtnOne{
+    color: transparent;
+    background-color: transparent;
+    border: hidden;
+    width: 100px;
+    height: 50px;
+    background-image: url("BACKBTN.png");
+}
+.BackBtnOne:hover{
+    color: transparent;
+    background-color: transparent;
+    border: hidden;
+    width: 100px;
+    height: 50px;
+    background-image: url("BACKBTNH.png");
+}
+.BackBtnOne:active{
+    color: transparent;
+    background-color: transparent;
+    border: hidden;
+    width: 100px;
+    height: 50px;
+    background-image: url("BACKBTNA.png");
+}
+/* Next Button */
+.WrapNextBtnTwo{
+    top: 3145px;
+    left: 2535px;
+}
+.NextBtnTwo{
+    color: transparent;
+    background-color: transparent;
+    border: hidden;
+    width: 100px;
+    height: 50px;
+    background-image: url("NEXTBTN.png");
+}
+.NextBtnTwo:hover{
+    color: transparent;
+    background-color: transparent;
+    border: hidden;
+    width: 100px;
+    height: 50px;
+    background-image: url("NEXTBTNH.png");
+}
+.NextBtnTwo:active{
+    color: transparent;
+    background-color: transparent;
+    border: hidden;
+    width: 100px;
+    height: 50px;
+    background-image: url("NEXTBTNA.png");
+}
+
+
+/* Page Three About */
+.WrapAboutPageThree{
+    top: 2607px;
+    left: 2815px;
+}
+.AboutThree{
+    background-image: url("AboutPage2.png");
+}
+/* Home Button */
+.WrapHomeBtnThree{
+    top: 2620px;
+    left: 2832px;
+}
+.HomeBtnThree{
+    color: transparent;
+    background-color: transparent;
+    border: hidden;
+    width: 60px;
+    height: 63px;
+    background-image: url("HomeButton.png");
+}
+/* Back Button */
+.WrapBackBtnTwo{
+    top: 3145px;
+    left: 2830px;
+}
+.BackBtnTwo{
+    color: transparent;
+    background-color: transparent;
+    border: hidden;
+    width: 100px;
+    height: 50px;
+    background-image: url("BACKBTN.png");
+}
+.BackBtnTwo:hover{
+    color: transparent;
+    background-color: transparent;
+    border: hidden;
+    width: 100px;
+    height: 50px;
+    background-image: url("BACKBTNH.png");
+}
+.BackBtnTwo:active{
+    color: transparent;
+    background-color: transparent;
+    border: hidden;
+    width: 100px;
+    height: 50px;
+    background-image: url("BACKBTNA.png");
+}

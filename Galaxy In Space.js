@@ -12,6 +12,10 @@ function MainMenu(){
     })
 }
 
+function LoadWindow(){
+    NolCompleted()
+    MainMenu()
+}
 PlayGameBtn.addEventListener("click", function(){
     window.scrollTo({
         top: 646,

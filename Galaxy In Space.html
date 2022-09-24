@@ -4,13 +4,13 @@
     <title>G. I. S.</title>
         <link href='https://fonts.googleapis.com/css?family=Audiowide' rel='stylesheet'>
         <link rel="stylesheet" href="Galaxy In Space.css">
-        <link rel="stylesheet" href="Play Game/PlayGame.css">
-        <link rel="stylesheet" href="Choose Character/ChooseCharacter.css">
-        <link rel="stylesheet" href="Settings/Settings.css">
-        <link rel="stylesheet" href="About/About.css">
-        <link rel="stylesheet" href="More Game/MoreGame.css">
+        <link rel="stylesheet" href="PlayGame.css">
+        <link rel="stylesheet" href="ChooseCharacter.css">
+        <link rel="stylesheet" href="Settings.css">
+        <link rel="stylesheet" href="About.css">
+        <link rel="stylesheet" href="MoreGame.css">
 </head>
-<body onload="MainMenu()">
+<body onload="LoadWindow()">
     <!-- Main Menu -->
     <div class="WrapCanvasHome">
         <canvas class="CanvasHome" id="CanvasHome" width="1200px" height="600px"></canvas>
@@ -33,32 +33,83 @@
     <div class="WrapMoreGame">
         <button class="MoreGame" id="MoreGame">More Game</button>
     </div>
+
     
     <!-- Play Game -->
     <div class="WrapCanvasPlayGame">
         <canvas class="CanvasPlayGame" id="CanvasPlayGame" width="1200px" height="600px"></canvas>
     </div>
+    <div class="WrapBackPlay">
+        <button class="BackPlay" onclick="MainMenu()"></button>
+    </div>
+    
+    <div class="WrapBtnLvlOne">
+        <button class="BtnLevelOne" id="BtnLevelOne"></button>
+    </div>
+    <div class="WrapBtnLvlTwo">
+        <button class="BtnLevelTwo" id="BtnLevelTwo"></button>
+    </div>
+    <div class="WrapBtnLvlThree">
+        <button class="BtnLevelThree" id="BtnLevelThree"></button>
+    </div>
+
+    <div class="WrapLvlOneAchievement">
+        <h1 class="NoThroophyLvlOne" id="NoThroophyLvlOne"></h1>
+    </div>
+    <div class="WrapLvlOneAchievement">
+        <h1 class="ThroophyLvlOne" id="ThroophyLvlOne"></h1>
+    </div>
+
+    <div class="WrapLvlTwoAchievement">
+        <h1 class="LockedLvlTwo" id="LockedLvlTwo"></h1>
+    </div>
+    <div class="WrapLvlTwoAchievement">
+        <h1 class="NoThroophyLvlTwo" id="NoThroophyLvlTwo"></h1>
+    </div>
+    <div class="WrapLvlTwoAchievement">
+        <h1 class="ThroophyLvlTwo" id="ThroophyLvlTwo"></h1>
+    </div>
+
+    <div class="WrapLvlThreeAchievement">
+        <h1 class="LockedLvlThree" id="LockedLvlThree"></h1>
+    </div>
+    <div class="WrapLvlThreeAchievement">
+        <h1 class="NoThroophyLvlThree" id="NoThroophyLvlThree"></h1>
+    </div>
+    <div class="WrapLvlThreeAchievement">
+        <h1 class="ThroophyLvlThree" id="ThroophyLvlThree"></h1>
+    </div>
+
+    
+
 
     <!-- Choose Character -->
     <div class="WrapCanvasChooseCharacter">
         <canvas class="CanvasChooseCharacter" id="CanvasChooseCharacter" width="1200px" height="600px"></canvas>
     </div>
+    <div class="WrapBackChar">
+        <button class="BackChar" onclick="MainMenu()"></button>
+    </div>
+    <div class="WrapTittleLevel">
+        <h1 class="TittleLevel">Level G. I. S.</h1>
+    </div>
+
 
     <!-- Setting -->
     <div class="WrapCanvasSettings">
-        <canvas class="CanvasSettings" id="CanvasSettings" width="1200px" height="600px"></canvas>
+        <canvas class="CanvasSettings" width="1200px" height="600px"></canvas>
     </div>
     <div class="WrapTittleSettings">
-        <h1 class="TittleSettings" id="TittleSettings">Settings</h1>
+        <h1 class="TittleSettings">Settings</h1>
     </div>
     <div class="WrapLineTittleSettings">
-        <hr class="LineTittleSettings" id="LineTittleSettings">
+        <hr class="LineTittleSettings">
     </div>
     <div class="WrapTittleVolume">
-        <h2 class="TittleVolume" id="TittleVolume">Volume Audio Game</h2>
+        <h2 class="TittleVolume">Volume Audio Game</h2>
     </div>
     <div class="WrapTittleMusicVolume">
-        <h3 class="TittleMusicVolume" id="TittleMusicVolume">Music</h3>
+        <h3 class="TittleMusicVolume">Music</h3>
     </div>
     <div class="WrapMusicVolume">
         <input class="MusicVolume" id="MusicVolume" onmousemove="volumeMusic()" type="range" min="0.00" max="1.00" value="0.50" step="0.01">
@@ -67,7 +118,7 @@
         <h4 class="VolumeMusic" id="VolumeMusic">0.5%</h4>
     </div>
     <div class="WrapTittleSoundVolume">
-        <h3 class="TittleSoundVolume" id="TittleSoundVolume">Sound</h3>
+        <h3 class="TittleSoundVolume">Sound</h3>
     </div>
     <div class="WrapSoundVolume">
         <input class="SoundVolume" id="SoundVolume" onmousemove="volumeSound()" type="range" min="0.00" max="1.00" value="0.50" step="0.01">
@@ -76,16 +127,16 @@
         <h4 class="VolumeSound" id="VolumeSound">0.5%</h4>
     </div>
     <div class="WrapLineSET">
-        <img class="LineSET" id="LineSET" src="Settings/Line.png">
+        <img class="LineSET" src="Settings/Line.png">
     </div>
     <div class="WrapTittleController">
-        <h2 class="TittleController" id="TittleController">Controller On Keyboard</h2>
+        <h2 class="TittleController">Controller On Keyboard</h2>
     </div>
     <div class="WrapTittleKeyArrow">
         <button class="TittleKeyArrow" id="TittleKeyArrow" onclick="KeyArrow()">Key Arrow</button>
     </div>
     <div class="WrapKEYButton">
-        <button class="KEYButton" id="KEYButton" onclick="KeyArrow()"><img id="KEYButton" src="Settings/KEY.png"></button>
+        <button class="KEYButton" id="KEYButton" onclick="KeyArrow()"></button>
     </div>
     <div class="WrapKeySelect">
         <button class="keySelect" id="keySelect" onclick="KeyArrow()">Selected</button>
@@ -94,7 +145,7 @@
         <button class="TittleWASD" id="TittleWASD" onclick="KeyWasd()">WASD</button>
     </div>
     <div class="WrapWASDButton">
-        <button class="WASDButton" id="WASDButton" onclick="KeyWasd()"><img id="WASDButton" src="Settings/WASD.png"></button>
+        <button class="WASDButton" id="WASDButton" onclick="KeyWasd()"></button>
     </div>
     <div class="WrapWASDSelect">
         <button class="wasdSelect" id="wasdSelect" onclick="KeyWasd()">Select</button>
@@ -105,32 +156,66 @@
 
 
     <!-- About -->
+    <!-- Page One -->
     <div class="WrapAboutPage0ne">
         <canvas class="AboutOne" id="AboutOne" width="1200px" height="600px"></canvas>
     </div>
+    <div class="WrapHomeBtnOne">
+        <button class="HomeBtnOne" onclick="MainMenu()"></button>
+    </div>
+    <div class="WrapNextBtnOne">
+        <button class="NextBtnOne" id="NextBtnOne">Next</button>
+    </div>
+    <!-- Page Two -->
     <div class="WrapAboutPageTwo">
         <canvas class="AboutTwo" id="AboutTwo" width="1200px" height="600px"></canvas>
     </div>
+    <div class="WrapHomeBtnTwo">
+        <button class="HomeBtnTwo" onclick="MainMenu()"></button>
+    </div>
+    <div class="WrapBackBtnOne">
+        <button class="BackBtnOne" id="BackBtnOne">Back</button>
+    </div>
+    <div class="WrapNextBtnTwo">
+        <button class="NextBtnTwo" id="NextBtnTwo">Next</button>
+    </div>
+    <!-- Page Three -->
     <div class="WrapAboutPageThree">
         <canvas class="AboutThree" id="AboutThree" width="1200px" height="600px"></canvas>
     </div>
+    <div class="WrapHomeBtnThree">
+        <button class="HomeBtnThree" onclick="MainMenu()"></button>
+    </div>
+    <div class="WrapBackBtnTwo">
+        <button class="BackBtnTwo" id="BackBtnTwo">Back</button>
+    </div>
     
+
     <!-- More Game -->
     <div class="WrapCanvasMoreGame">
         <canvas class="CanvasMoreGame" id="CanvasMoreGame" width="1200px" height="600px"></canvas>
     </div>
 
+    <div class="PositionDetectLevel">
+        <h1 class="DetectLevel" id="DetectLevelOne">none</h1>
+        <h1 class="DetectLevel" id="DetectLevelTwo">none</h1>
+        <h1 class="DetectLevel" id="DetectLevelThree">none</h1>
+        <button onclick="LevelOneCompleted()">Finish 1</button>
+        <button onclick="LevelTwoCompleted()">Finish 2</button>
+        <button onclick="LevelThreeCompleted()">Finish 3</button>
+        <button onclick="PlayGame()">Play</button>
+    </div>
 
-
-    
     <script src="Galaxy In Space.js"></script>
-    <script src="Play Game/PlayGame.js"></script>
-    <script src="Choose Character/ChooseCharacter.js"></script>
-    <script src="Settings/Settings.js"></script>
-    <script src="About/About.js"></script>
-    <script src="More Game/MoreGame.js"></script>
+    <script src="PlayGame.js"></script>
+    <script src="ChooseCharacter.js"></script>
+    <script src="Settings.js"></script>
+    <script src="About.js"></script>
+    <script src="MoreGame.js"></script>
 
-
+    <div class="PositionCanvasLimited">
+        <canvas class="CanvasLimited"></canvas>
+    </div>
     <div class="PositionCanvasLimit">
         <canvas class="CanvasLimit"></canvas>
     </div>

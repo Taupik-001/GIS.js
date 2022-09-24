@@ -1,0 +1,146 @@
+/* Canvas Play Game */
+.WrapCanvasPlayGame{
+    top: 669px;
+    left: 83px;
+}
+.CanvasPlayGame{
+    background-image: url("Play Game.png");
+}
+.WrapBackPlay{
+    top: 685px;
+    left: 100px;
+}
+.BackPlay{
+    background-image: url("BackButton.png");
+    width: 55px;
+    height: 55px;
+    border-radius: 5px;
+}
+.BackPlay:hover{
+    background-image: url("BackButton Hover.png");
+    width: 55px;
+    height: 55px;
+    border-radius: 5px;
+}
+.BackPlay:active{
+    background-image: url("BackButton.png");
+    width: 55px;
+    height: 55px;
+    border-radius: 5px;
+}
+.WrapTittleLevel{
+    top: 685px;
+    left: 580px;
+}
+.TittleLevel{
+    text-align: center;
+    color: white;
+}
+.TittleLevel:hover{
+    color: aqua;
+}
+
+/* Button Play Game */
+.WrapBtnLvlOne{
+    top: 850px;
+    left: 203px;
+}
+.WrapBtnLvlTwo{
+    top: 850px;
+    left: 573px;
+}
+.WrapBtnLvlThree{
+    top: 850px;
+    left: 943px;
+}
+
+.BtnLevelOne{
+    /* background-color: transparent; */
+    /* background-image: url("Level One.png"); */
+    width: 220px;
+    height: 320px;
+    border: 10px groove blue
+}
+.BtnLevelOne:hover{
+    border: 10px skyblue groove;
+}
+.BtnLevelTwo{
+    background-image: url("Level 2 Locked.png");
+    width: 220px;
+    height: 320px;
+    border: 10px groove gray;
+}
+.BtnLevelTwo:hover{
+    border: 10px skyblue groove;
+}
+.BtnLevelThree{
+    background-image: url("Level 3 Locked.png");
+    width: 220px;
+    height: 320px;
+    border: 10px groove gray;
+}
+.BtnLevelThree:hover{
+    border: 10px skyblue groove;
+}
+
+/* The Troophies */
+.WrapLvlOneAchievement{
+    top: 750px;
+    left: 213px;
+}
+.WrapLvlTwoAchievement{
+    top: 750px;
+    left: 583px;
+}
+.WrapLvlThreeAchievement{
+    top: 750px;
+    left: 953px;
+}
+.NoThroophyLvlOne{
+    width: 200px;
+    height: 160px;
+    background-image: url("Troophy1Empty.png");
+}
+.ThroophyLvlOne{
+    width: 200px;
+    height: 160px;
+    background-image: url("TroophyLevel1.png");
+}
+.LockedLvlTwo{
+    width: 200px;
+    height: 160px;
+    background-image: url("Locked.png");
+}
+.NoThroophyLvlTwo{
+    width: 200px;
+    height: 160px;
+    background-image: url("Troophy2Empty.png");
+}
+.ThroophyLvlTwo{
+    width: 200px;
+    height: 160px;
+    background-image: url("TroophyLevel2.png");
+}
+.LockedLvlThree{
+    width: 200px;
+    height: 160px;
+    background-image: url("Locked.png");
+}
+.NoThroophyLvlThree{
+    width: 200px;
+    height: 160px;
+    background-image: url("Troophy3Empty.png");
+}
+.ThroophyLvlThree{
+    width: 200px;
+    height: 160px;
+    background-image: url("TroophyLevel3.png");
+}
+
+.PositionDetectLevel{
+    top: 1200px;
+    left: 645px;
+}
+.DetectLevel{
+    color: white;
+}

@@ -1,0 +1,30 @@
+.WrapCanvasChooseCharacter{
+    top: 1315px;
+    left: 83px;
+}
+.CanvasChooseCharacter{
+    background-image: url("Choose Character.png");
+}
+.WrapBackChar{
+    top: 1330px;
+    left: 100px;
+}
+.BackChar{
+    background-image: url("BackButton.png");
+    width: 55px;
+    height: 55px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.BackChar:hover{
+    background-image: url("BackButton Hover.png");
+    width: 55px;
+    height: 55px;
+    border-radius: 5px;
+}
+.BackChar:active{
+    background-image: url("BackButton.png");
+    width: 55px;
+    height: 55px;
+    border-radius: 5px;
+}
