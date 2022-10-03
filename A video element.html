@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Document</title>
+    <style>
+        body{
+            background-color: skyblue;
+        }
+    </style>
+</head>
+<body>
+    <!-- <video width="400px" height="200px" src="Alan Walker - Force(720P_HD).mp4" controls></video> -->
+    <button onclick="videoAppend()">Play Video</button>
+    <button onclick="videoRemove()">Remove Vid</button>
+    <script>
+        function videoAppend(){
+            alan = new video("Alan Walker - Force(720P_HD).mp4")
+            alan.playVid()
+        }
+        function videoRemove(){
+            alan.RemoveVid()
+        }
+        function video(src){
+            this.video = document.createElement("video")
+            this.video.src = src
+            this.video.setAttribute("preload", "auto")
+            // this.video.setAttribute("controls", "none")
+            // this.video.style.display = "none"
+            document.body.appendChild(this.video)
+            this.playVid = function(){
+              this.video.play();
+            }
+            this.stopVid = function(){
+              this.video.pause();
+            }
+            this.loopVid = function(){
+                this.video.setAttribute("loop", "loop");
+                this.video.play();
+            }
+            this.volumeVid = function(vol){
+              this.video.volume = vol;
+            }
+            this.RemoveVid = function(){
+                document.body.removeChild(this.video)
+            }
+        }
+        function sound(src){
+            this.sound = document.createElement("audio");
+            this.sound.src = src;
+            this.sound.setAttribute("preload", "auto");
+            this.sound.setAttribute("controls", "none");
+            this.sound.style.display = "none";
+            document.body.appendChild(this.sound);
+            this.play = function(){
+              this.sound.play();
+            }
+            this.stop = function(){
+              this.sound.pause();
+            }
+            this.loop = function(){
+                this.sound.setAttribute("loop", "loop");
+                this.sound.play();
+            }
+            this.volume = function(vol){
+              this.sound.volume = vol;
+            }
+        }
+    </script>
+</body>
+</html>

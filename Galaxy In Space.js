@@ -5,22 +5,39 @@ let ChooseCharacterBtn = document.getElementById("ChooseCharacter")
 let SettingsBtn = document.getElementById("Settings")
 let AboutBtn = document.getElementById("About")
 let MoreGameBtn = document.getElementById("MoreGame")
+function LoadWindow(){
+    window.scrollTo({
+        top: 0,
+        left: 0,
+        behavior: "smooth"
+    })
+    // Play Game
+    NolCompleted()
+    LevelOneGame()
+    // StartLevelOne()
+    //Game Over
+    hideTittleGameOver()
+    //Paused Game
+    hideTittlePausedGame()
+    //Finish Level
+    hideTittleCompletedLevel()
+
+    // Choose Character
+    SelectCharacterOne()
+    
+}
 function MainMenu(){
     window.scrollTo({
         top: 0,
         left: 0,
     })
 }
-
-function LoadWindow(){
-    NolCompleted()
-    MainMenu()
-}
 PlayGameBtn.addEventListener("click", function(){
     window.scrollTo({
         top: 646,
         left: 0,
     })
+    PlayGame()
 })
 ChooseCharacterBtn.addEventListener("click", function(){
     window.scrollTo({

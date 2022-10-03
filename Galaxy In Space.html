@@ -11,6 +11,7 @@
         <link rel="stylesheet" href="MoreGame.css">
 </head>
 <body onload="LoadWindow()">
+<!-- <body onload="LevelOneGame()"> -->
     <!-- Main Menu -->
     <div class="WrapCanvasHome">
         <canvas class="CanvasHome" id="CanvasHome" width="1200px" height="600px"></canvas>
@@ -33,24 +34,54 @@
     <div class="WrapMoreGame">
         <button class="MoreGame" id="MoreGame">More Game</button>
     </div>
-
     
     <!-- Play Game -->
     <div class="WrapCanvasPlayGame">
         <canvas class="CanvasPlayGame" id="CanvasPlayGame" width="1200px" height="600px"></canvas>
     </div>
+
+    <div class="WrapBtnLvlOne">
+        <button onclick="CanvasGameLvlOne()" class="BtnLvlOne" id="BtnLvlOne">Play</button>
+    </div>
+    <div class="WrapBtnLvlTwo">
+        <button onclick="CanvasGameLvlTwo()" class="BtnLvlTwo" id="BtnLvlTwo">Locked</button>
+    </div>
+    <div class="WrapBtnLvlThree">
+        <button onclick="CanvasGameLvlThree()" class="BtnLvlThree" id="BtnLvlThree">Locked</button>
+    </div>
+
+    <div class="WrapTittleLevel">
+        <h1 class="TittleLevel">Level G. I. S.</h1>
+    </div>
     <div class="WrapBackPlay">
         <button class="BackPlay" onclick="MainMenu()"></button>
     </div>
-    
-    <div class="WrapBtnLvlOne">
-        <button class="BtnLevelOne" id="BtnLevelOne"></button>
+
+    <div class="WrapLockedLvlTwo">
+        <h1 class="LockedLevelTwo" id="LockedLevelTwo"></h1>
     </div>
-    <div class="WrapBtnLvlTwo">
-        <button class="BtnLevelTwo" id="BtnLevelTwo"></button>
+    <div class="WrapLockedLvlThree">
+        <h1 class="LockedLevelThree" id="LockedLevelThree"></h1>
     </div>
-    <div class="WrapBtnLvlThree">
-        <button class="BtnLevelThree" id="BtnLevelThree"></button>
+
+    <div class="WrapUnlockLvlOne">
+        <div class="UnlockLvlOne" id="UnlockLvlOne"></div>
+    </div>
+    <div class="WrapUnlockLvlTwo">
+        <div class="UnlockLvlTwo" id="UnlockLvlTwo"></div>
+    </div>
+    <div class="WrapUnlockLvlThree">
+        <div class="UnlockLvlThree" id="UnlockLvlThree"></div>
+    </div>
+
+    <div class="WrapCompletedLvlOne">
+        <div class="CompletedLevelOne" id="CompletedLevelOne"></div>
+    </div>
+    <div class="WrapCompletedLvlTwo">
+        <div class="CompletedLevelTwo" id="CompletedLevelTwo"></div>
+    </div>
+    <div class="WrapCompletedLvlThree">
+        <div class="CompletedLevelThree" id="CompletedLevelThree"></div>
     </div>
 
     <div class="WrapLvlOneAchievement">
@@ -79,10 +110,47 @@
     <div class="WrapLvlThreeAchievement">
         <h1 class="ThroophyLvlThree" id="ThroophyLvlThree"></h1>
     </div>
+    <div class="PositionDetectLevel">
+        <h1 class="DetectLevel" id="DetectLevelOne">none</h1>
+        <h1 class="DetectLevel" id="DetectLevelTwo">none</h1>
+        <h1 class="DetectLevel" id="DetectLevelThree">none</h1>
+        <button onclick="LevelOneCompleted()">Finish 1</button>
+        <button onclick="LevelTwoCompleted()">Finish 2</button>
+        <button onclick="LevelThreeCompleted()">Finish 3</button>
+    </div>
 
+    <!-- Game Level -->
+    <div class="wrapCanvasGame">
+        <canvas width="1200px" height="600px" class="CanvasLevelGame" id="CanvasLevelGame"></canvas>
+    </div>
+    <div class="WrapPauseButton">
+        <button class="PauseButton" id="PauseButton"></button>
+    </div>
+
+    <div class="WrapTittleGamePause">
+        <h1 class="TittleGamePause" id="TittleGamePause">Your Game Paused!</h1>
+    </div>
+    <dialog class="PauseDisplay" id="DisplayPause">
+        <button class="ResumeButton" id="ResumeButton"></button>
+        <button class="RestartButton" id="RestartButton"></button>
+        <button class="MainMenuButton" id="MainMenuButton"></button>
+    </dialog>
+    <div class="WrapTittleGameOver">
+        <h1 class="TittleGameOver" id="TittleGameOver">Game Over!</h1>
+    </div>
+    <dialog class="GameOverDisplay" id="DisplayGameOver">
+        <button class="PlayAgainOver" id="PlayAgainOver">Play Again</button>
+        <button class="MainMenuOver" id="MainMenuOver">Main Menu</button>
+    </dialog>
+
+    <div class="WrapTittleCompletedLevel">
+        <h1 class="TittleCompletedLevel" id="TittleCompletedLevel">Level Completed</h1>
+    </div>
+    <dialog class="FinishLevelDisplay" id="DisplayFinishLevel">
+        <button class="PlayNextLevel" id="PlayNextLevel">Next Level</button>
+        <button class="MainMenuFinish" id="MainMenuFinish">Main Menu</button>
+    </dialog>
     
-
-
     <!-- Choose Character -->
     <div class="WrapCanvasChooseCharacter">
         <canvas class="CanvasChooseCharacter" id="CanvasChooseCharacter" width="1200px" height="600px"></canvas>
@@ -90,8 +158,29 @@
     <div class="WrapBackChar">
         <button class="BackChar" onclick="MainMenu()"></button>
     </div>
-    <div class="WrapTittleLevel">
-        <h1 class="TittleLevel">Level G. I. S.</h1>
+    <div class="WrapTittleChooseCharacter">
+        <h1 class="TittleChooseCharcter">Choose your character</h1>
+    </div>
+
+    <div class="WrapimgCharOne">
+        <div class="ImgCharOne" id="ImgCharOne"></div>
+    </div>
+    <div class="WrapimgCharTwo">
+        <button class="ImgCharTwo" id="ImgCharTwo"></button>
+    </div>
+
+    <div class="WrapCharacterOne">
+        <div class="CharacterOne" id="CharacterOne"></div>
+    </div>
+    <div class="WrapCharacterTwo">
+        <div class="CharacterTwo" id="CharacterTwo"></div>
+    </div>
+
+    <div class="WrapBtnCharOne">
+        <button onclick="SelectCharacterOne()" class="BtnCharOne" id="BtnCharOne">Selected</button>
+    </div>
+    <div class="WrapBtnCharTwo">
+        <button onclick="SelectCharacterTwo()" class="BtnCharTwo" id="BtnCharTwo">Select</button>
     </div>
 
 
@@ -127,7 +216,7 @@
         <h4 class="VolumeSound" id="VolumeSound">0.5%</h4>
     </div>
     <div class="WrapLineSET">
-        <img class="LineSET" src="Settings/Line.png">
+        <img class="LineSET" src="Line.png">
     </div>
     <div class="WrapTittleController">
         <h2 class="TittleController">Controller On Keyboard</h2>
@@ -196,16 +285,6 @@
         <canvas class="CanvasMoreGame" id="CanvasMoreGame" width="1200px" height="600px"></canvas>
     </div>
 
-    <div class="PositionDetectLevel">
-        <h1 class="DetectLevel" id="DetectLevelOne">none</h1>
-        <h1 class="DetectLevel" id="DetectLevelTwo">none</h1>
-        <h1 class="DetectLevel" id="DetectLevelThree">none</h1>
-        <button onclick="LevelOneCompleted()">Finish 1</button>
-        <button onclick="LevelTwoCompleted()">Finish 2</button>
-        <button onclick="LevelThreeCompleted()">Finish 3</button>
-        <button onclick="PlayGame()">Play</button>
-    </div>
-
     <script src="Galaxy In Space.js"></script>
     <script src="PlayGame.js"></script>
     <script src="ChooseCharacter.js"></script>
@@ -219,5 +298,6 @@
     <div class="PositionCanvasLimit">
         <canvas class="CanvasLimit"></canvas>
     </div>
+    
 </body>
 </html>

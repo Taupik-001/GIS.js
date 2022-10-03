@@ -6,6 +6,8 @@
 .CanvasPlayGame{
     background-image: url("Play Game.png");
 }
+
+/* Back Button */
 .WrapBackPlay{
     top: 685px;
     left: 100px;
@@ -28,6 +30,199 @@
     height: 55px;
     border-radius: 5px;
 }
+
+/* Canvas Level Game */
+.wrapCanvasGame{
+    top: 669px;
+    left: 1449px;
+}
+.CanvasLevelGame{
+    background-color: blue;
+}
+
+/* Display Finish */
+.WrapTittleCompletedLevel{
+    top: 769px;
+    left: 1849px;
+}
+.TittleCompletedLevel{
+    color: white;
+}  
+.DisplayFinishLevel{
+    width: 400px;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+}
+.FinishLevelDisplay{
+    background-color: transparent;
+    border: none;
+    position: absolute;
+    top: 769px;
+    left: 1849px;
+    background-image: url("DisplayPause.png");
+    width: 400px;
+    height: 400px;
+}
+
+
+/* Display Game Over */
+.WrapTittleGameOver{
+    top: 769px;
+    left: 1849px;
+}
+.TittleGameOver{
+    color: white;
+    width: 400px;
+}
+.DisplayGameOver{
+    width: 400px;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+}
+.GameOverDisplay{
+    background-color: transparent;
+    border: none;
+    position: absolute;
+    top: 769px;
+    left: 1849px;
+    background-image: url("DisplayPause.png");
+    width: 400px;
+    height: 400px;
+}
+
+/* Display Pause Game */
+.WrapTittleGamePause{
+    top: 710px;
+    left: 1889px;
+}
+.TittleGamePause{
+    color: silver;
+    font-size: 30px;
+    width: 500px;
+    animation: TittlePause 3s infinite;
+  }
+  
+  @keyframes TittlePause {
+    0% {color: blue;}
+    50% {color: skyblue;}
+    100% {color: blue;}
+  }
+.DisplayPause{
+    width: 400px;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+.PauseDisplay{
+    background-color: transparent;
+    border: 15px blue groove;
+    position: absolute;
+    top: 759px;
+    left: 1839px;
+    /* border-radius: 30px; */
+    background-image: url("DisplayPause.png");
+    width: 430px;
+    height: 430px;
+}
+.PauseDisplay:hover{
+    background-color: transparent;
+    border: 15px blue groove;
+    position: absolute;
+    top: 759px;
+    left: 1839px;
+    /* border-radius: 30px; */
+    background-image: url("DisplayPause.png");
+    width: 430px;
+    height: 430px;
+}
+.WrapPauseButton{
+    top: 679px;
+    left: 2585px;
+}
+.PauseButton{
+    width: 50px;
+    height: 50px;
+    border: none;
+    border-radius: 25px;
+    background-image: url("ButtonPause.png");
+}
+.PauseButton:hover{
+    width: 50px;
+    height: 50px;
+    border: none;
+    border-radius: 25px;
+    background-image: url("ButtonPauseHover.png");
+}
+.ResumeButton{
+    border-radius: 15px;
+    border: none;
+    width: 200px;
+    height: 90px;
+    background-image: url("ButtonRE.png");
+}
+.RestartButton{
+    border-radius: 15px;
+    border: none;
+    width: 200px;
+    height: 90px;
+    background-image: url("ButtonR.png");
+}
+.MainMenuButton{
+    border-radius: 15px;
+    border: none;
+    width: 200px;
+    height: 90px;
+    background-image: url("ButtonM.png");
+}
+.ResumeButton:hover{
+    border: none;
+    width: 200px;
+    height: 90px;
+    background-image: url("ButtonREH.png");
+}
+.RestartButton:hover{
+    border: none;
+    width: 200px;
+    height: 90px;
+    background-image: url("ButtonRH.png");
+}
+.MainMenuButton:hover{
+    border: none;
+    width: 200px;
+    height: 90px;
+    background-image: url("ButtonMH.png");
+}
+.ResumeButton:active{
+    border: none;
+    width: 200px;
+    height: 80px;
+    background-image: url("ButtonREA.png");
+}
+.RestartButton:active{
+    border: none;
+    width: 200px;
+    height: 80px;
+    background-image: url("ButtonRA.png");
+}
+.MainMenuButton:active{
+    border: none;
+    width: 200px;
+    height: 80px;
+    background-image: url("ButtonMA.png");
+}
+
+/* Tittle Level Game */
 .WrapTittleLevel{
     top: 685px;
     left: 580px;
@@ -38,49 +233,220 @@
 }
 .TittleLevel:hover{
     color: aqua;
+    cursor: default;
 }
 
-/* Button Play Game */
-.WrapBtnLvlOne{
+/* Display Level One - Three */
+.WrapCompletedLvlOne{
     top: 850px;
     left: 203px;
 }
-.WrapBtnLvlTwo{
+.WrapCompletedLvlTwo{
     top: 850px;
     left: 573px;
 }
-.WrapBtnLvlThree{
+.WrapCompletedLvlThree{
     top: 850px;
     left: 943px;
 }
+.WrapUnlockLvlOne{
+    top: 850px;
+    left: 203px;
+}
+.WrapUnlockLvlTwo{
+    top: 850px;
+    left: 573px;
+}
+.WrapUnlockLvlThree{
+    top: 850px;
+    left: 943px;
+}
+.WrapLockedLvlTwo{
+    top: 850px;
+    left: 573px;
+}
+.WrapLockedLvlThree{
+    top: 850px;
+    left: 943px;
+}
+/* Display Level One - Three */
+.UnlockLvlOne{
+    background-image: url("Level.png");
+    width: 220px;
+    height: 320px;
+    border: skyblue 10px groove;
+}
+.UnlockLvlTwo{
+    background-image: url("Level.png");
+    width: 220px;
+    height: 320px;
+    border: skyblue 10px groove;
+}
+.UnlockLvlThree{
+    background-image: url("Level.png");
+    width: 220px;
+    height: 320px;
+    border: skyblue 10px groove;
+}
 
-.BtnLevelOne{
-    /* background-color: transparent; */
-    /* background-image: url("Level One.png"); */
+.LockedLevelTwo{
+    background-image: url("LevelLocked.png");
     width: 220px;
     height: 320px;
-    border: 10px groove blue
+    border: gray 10px outset;
 }
-.BtnLevelOne:hover{
-    border: 10px skyblue groove;
-}
-.BtnLevelTwo{
-    background-image: url("Level 2 Locked.png");
+.LockedLevelThree{
+    background-image: url("LevelLocked.png");
     width: 220px;
     height: 320px;
-    border: 10px groove gray;
+    border: gray 10px outset;
 }
-.BtnLevelTwo:hover{
-    border: 10px skyblue groove;
+
+/* Display Level One - Three When Its Completed */
+*,
+*:before,
+*:after{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box
 }
-.BtnLevelThree{
-    background-image: url("Level 3 Locked.png");
-    width: 220px;
+.CompletedLevelOne{
     height: 320px;
-    border: 10px groove gray;
+    width: 220px;
+    position: absolute;
+    margin: auto;
+    top: 0;
+    left: 0;
+    right: 0;
+    /* box-shadow:0 20px 35px rgba(0,0,0,3); */
+    border-radius: 5px;
+    overflow: hidden;
+    background-color: #1c1b29;
 }
-.BtnLevelThree:hover{
-    border: 10px skyblue groove;
+.CompletedLevelOne:before{
+    content: "";
+    background-image: conic-gradient(
+        #04b0ee 50deg,
+        transparent 120deg
+    );
+    height: 150%;
+    width: 300%;
+    position: absolute;
+    left: -25%;
+    top: -25%;
+    animation: rotate 2s linear infinite;
+}
+@keyframes rotate{
+    100%{
+        transform: rotate(-360deg);
+    }
+}
+.CompletedLevelOne:after{
+    content: "";
+    height: 94%;
+    width: 94%;
+    position: absolute;
+    background-image: url("LevelCompleted.png");
+    border-radius: 5px;
+    top: 3%;
+    left: 3%;
+    color: #04b0ee;
+    display: grid;
+    place-items: center;
+    font-size: 20px;
+    letter-spacing: 6px;
+}
+.CompletedLevelTwo{
+    height: 320px;
+    width: 220px;
+    position: absolute;
+    margin: auto;
+    top: 0;
+    left: 0;
+    right: 0;
+    /* box-shadow:0 20px 35px rgba(0,0,0,3); */
+    border-radius: 5px;
+    overflow: hidden;
+    background-color: #1c1b29;
+}
+.CompletedLevelTwo:before{
+    content: "";
+    background-image: conic-gradient(
+        #04b0ee 50deg,
+        transparent 120deg
+    );
+    height: 150%;
+    width: 300%;
+    position: absolute;
+    left: -25%;
+    top: -25%;
+    animation: rotate 2s linear infinite;
+}
+.CompletedLevelTwo:after{
+    content: "";
+    height: 94%;
+    width: 94%;
+    position: absolute;
+    background-image: url("LevelCompleted.png");
+    border-radius: 5px;
+    top: 3%;
+    left: 3%;
+    color: #04b0ee;
+    display: grid;
+    place-items: center;
+    font-size: 20px;
+    letter-spacing: 6px;
+}
+@keyframes rotate{
+    100%{
+        transform: rotate(-360deg);
+    }
+}
+.CompletedLevelThree{
+    height: 320px;
+    width: 220px;
+    position: absolute;
+    margin: auto;
+    top: 0;
+    left: 0;
+    right: 0;
+    /* box-shadow:0 20px 35px rgba(0,0,0,3); */
+    border-radius: 5px;
+    overflow: hidden;
+    background-color: #1c1b29;
+}
+.CompletedLevelThree:before{
+    content: "";
+    background-image: conic-gradient(
+        #04b0ee 50deg,
+        transparent 120deg
+    );
+    height: 150%;
+    width: 300%;
+    position: absolute;
+    left: -25%;
+    top: -25%;
+    animation: rotate 2s linear infinite;
+}
+.CompletedLevelThree:after{
+    content: "";
+    height: 94%;
+    width: 94%;
+    position: absolute;
+    background-image: url("LevelCompleted.png");
+    border-radius: 5px;
+    top: 3%;
+    left: 3%;
+    color: #04b0ee;
+    display: grid;
+    place-items: center;
+    font-size: 20px;
+    letter-spacing: 6px;
+}
+@keyframes rotate{
+    100%{
+        transform: rotate(-360deg);
+    }
 }
 
 /* The Troophies */
@@ -137,9 +503,89 @@
     background-image: url("TroophyLevel3.png");
 }
 
+/* Button Level One - Three For Playing */
+.WrapBtnLvlOne{
+    top: 1180px;
+    left: 250px;
+}
+.WrapBtnLvlTwo{
+    top: 1180px;
+    left: 620px;
+}
+.WrapBtnLvlThree{
+    top: 1180px;
+    left: 990px;
+}
+/* Button Level One - Three For Playing */
+.BtnLvlOne{
+    border: 6px skyblue groove;
+    font-size: 20px;
+    color: blue;
+    background-color: cornflowerblue;
+    width: 126px;
+    height: 50px;
+}
+.BtnLvlOne:hover{
+    border: 6px blue groove;
+    font-size: 20px;
+    color: skyblue;
+    background-color: blueviolet;
+    width: 126px;
+    height: 50px;
+}
+.BtnLvlOne:active{
+    color: darkslateblue;
+    border: 6px #04b0ee groove;
+    background-color: darkmagenta;
+}
+.BtnLvlTwo{
+    border: 6px skyblue groove;
+    font-size: 20px;
+    color: blue;
+    background-color: cornflowerblue;
+    width: 126px;
+    height: 50px;
+}
+.BtnLvlTwo:hover{
+    border: 6px blue groove;
+    font-size: 20px;
+    color: skyblue;
+    background-color: blueviolet;
+    width: 126px;
+    height: 50px;
+}
+.BtnLvlTwo:active{
+    color: darkslateblue;
+    border: 6px #04b0ee groove;
+    background-color: darkmagenta;
+}
+
+.BtnLvlThree{
+    border: 6px skyblue groove;
+    font-size: 20px;
+    color: blue;
+    background-color: cornflowerblue;
+    width: 126px;
+    height: 50px;
+}
+.BtnLvlThree:hover{
+    border: 6px blue groove;
+    font-size: 20px;
+    color: skyblue;
+    background-color: blueviolet;
+    width: 126px;
+    height: 50px;
+}
+.BtnLvlThree:active{
+    color: darkslateblue;
+    border: 6px #04b0ee groove;
+    background-color: darkmagenta;
+}
+
+/* Detection Level Completed */
 .PositionDetectLevel{
-    top: 1200px;
-    left: 645px;
+    top: 800px;
+    left: 1100px;
 }
 .DetectLevel{
     color: white;

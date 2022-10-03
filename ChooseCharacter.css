@@ -1,3 +1,4 @@
+/* Canvas Choose Character */
 .WrapCanvasChooseCharacter{
     top: 1315px;
     left: 83px;
@@ -5,6 +6,8 @@
 .CanvasChooseCharacter{
     background-image: url("Choose Character.png");
 }
+
+/* Back Button */
 .WrapBackChar{
     top: 1330px;
     left: 100px;
@@ -27,4 +30,185 @@
     width: 55px;
     height: 55px;
     border-radius: 5px;
+}
+
+/* Tittle Choose Character */
+.WrapTittleChooseCharacter{
+    top: 1330px;
+    left: 480px;
+}
+.TittleChooseCharcter{
+    border-radius: 10px;
+    border-bottom: 10px groove silver;
+    color: white;
+}
+
+/* Display Character One And Two */
+.WrapCharacterOne{
+    top: 1450px;
+    left: 283px;
+}
+.WrapCharacterTwo{
+    top: 1450px;
+    left: 783px;
+}
+.CharacterOne{
+    background-image: url("CharOne.png");
+    width: 320px;
+    height: 420px;
+    border: 10px grey inset;
+}
+.CharacterTwo{
+    background-image: url("CharTwo.png");
+    width: 320px;
+    height: 420px;
+    border: 10px grey inset;
+}
+.WrapimgCharOne{
+    top: 1450px;
+    left: 283px;
+}
+.WrapimgCharTwo{
+    top: 1450px;
+    left: 783px;
+}
+/* Display Character When Its Selected */
+*,
+*:before,
+*:after{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box
+}
+.ImgCharOne{
+    background-color: blue;
+    width: 300px;
+    height: 400px;
+}
+.ImgCharOne{
+    height: 420px;
+    width: 320px;
+    position: absolute;
+    margin: auto;
+    top: 0;
+    left: 0;
+    right: 0;
+    /* box-shadow:0 20px 35px rgba(0,0,0,3); */
+    border-radius: 5px;
+    overflow: hidden;
+    background-color: #1c1b29;
+}
+.ImgCharOne:before{
+    content: "";
+    background-image: conic-gradient(
+        #04b0ee 30deg,
+        transparent 120deg
+    );
+    height: 180%;
+    width: 250%;
+    position: absolute;
+    left: -50%;
+    top: -25%;
+    animation: rotate 2s linear infinite;
+}
+.ImgCharOne:after{
+    content: "";
+    height: 94%;
+    width: 94%;
+    position: absolute;
+    background-color: #1c1b29; 
+    background-image: url("CharOne.png");
+    border-radius: 5px;
+    top: 3%;
+    left: 3%;
+    color: #04b0ee;
+    display: grid;
+    place-items: center;
+    font-size: 20px;
+    letter-spacing: 6px;
+}
+.ImgCharTwo{
+    height: 420px;
+    width: 320px;
+    position: absolute;
+    margin: auto;
+    top: 0;
+    left: 0;
+    right: 0;
+    /* box-shadow:0 20px 35px rgba(0,0,0,3); */
+    border-radius: 5px;
+    overflow: hidden;
+    background-color: #1c1b29;
+}
+.ImgCharTwo:before{
+    content: "";
+    background-image: conic-gradient(
+        #04b0ee 30deg,
+        transparent 120deg
+    );
+    height: 180%;
+    width: 250%;
+    position: absolute;
+    left: -50%;
+    top: -25%;
+    animation: rotate 2s linear infinite;
+}
+@keyframes rotate{
+    100%{
+        transform: rotate(-360deg);
+    }
+}
+.ImgCharTwo:after{
+    content: "";
+    height: 94%;
+    width: 94%;
+    position: absolute;
+    background-color: #1c1b29; 
+    background-image: url("CharTwo.png");
+    border-radius: 5px;
+    top: 3%;
+    left: 3%;
+    color: #04b0ee;
+    display: grid;
+    place-items: center;
+    font-size: 20px;
+    letter-spacing: 6px;
+}
+
+/* Button Select Choose Character */
+.WrapBtnCharOne{
+    top: 1790px;
+    left: 293px;
+}
+.WrapBtnCharTwo{
+    top: 1790px;
+    left: 793px;
+}
+.BtnCharOne{
+    color: black;
+    font-size: 30px;
+    text-align: center;
+    width: 300px;
+    height: 70px;
+    background-color: blue;
+    border: 2px solid black;
+}
+.BtnCharTwo{
+    color: black;
+    font-size: 30px;
+    text-align: center;
+    width: 300px;
+    height: 70px;
+    background-color: skyblue;
+    border: 2px solid black;
+}
+.BtnCharOne:hover{
+    color: rgb(73, 73, 204);
+    background-color: rgb(0, 100, 255);
+    border: 2px solid white;
+}
+.BtnCharTwo:hover{
+    color: rgb(73, 73, 204);
+    background-color: rgb(0, 100, 255);
+    border: 2px solid white;
 }

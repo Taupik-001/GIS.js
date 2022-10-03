@@ -1,11 +1,13 @@
 let Detectkey = document.getElementById("keySelect")
 let Detectwasd = document.getElementById("wasdSelect")
+let TittleKey = document.getElementById("TittleKeyArrow")
+let TittleWasd = document.getElementById("TittleWASD")
+let BtnKey = document.getElementById("KEYButton")
+let BtnWasd = document.getElementById("WASDButton")
 
 if(Detectkey.innerHTML == "Selected"){
-
 }
 if(Detectwasd.innerHTML == "Selected"){
-
 }
 volMusic
 volSound
@@ -20,20 +22,20 @@ function volumeSound(){
 }
 
 function KeyWasd(){
-    document.getElementById("wasdSelect").innerHTML = "Selected"
-    document.getElementById("keySelect").innerHTML = "Select"
-    document.getElementById("TittleWASD").style.backgroundColor = "blue"
-    document.getElementById("TittleKeyArrow").style.backgroundColor = "black"
-    document.getElementById("WASDButton").style.border = "10px groove blue"
-    document.getElementById("KEYButton").style.border = "10px groove silver"
+    Detectwasd.innerHTML = "Selected"
+    Detectkey.innerHTML = "Select"
+    TittleWasd.style.backgroundColor = "blue"
+    TittleKey.style.backgroundColor = "black"
+    BtnWasd.style.border = "10px groove blue"
+    BtnKey.style.border = "10px groove silver"
 }
 function KeyArrow(){
-    document.getElementById("keySelect").innerHTML = "Selected"
-    document.getElementById("wasdSelect").innerHTML = "Select"
-    document.getElementById("TittleKeyArrow").style.backgroundColor = "blue"
-    document.getElementById("TittleWASD").style.backgroundColor = "black"
-    document.getElementById("KEYButton").style.border = "10px groove blue"
-    document.getElementById("WASDButton").style.border = "10px groove silver"
+    Detectkey.innerHTML = "Selected"
+    Detectwasd.innerHTML = "Select"
+    TittleKey.style.backgroundColor = "blue"
+    TittleWasd.style.backgroundColor = "black"
+    BtnKey.style.border = "10px groove blue"
+    BtnWasd.style.border = "10px groove silver"
 }
 
 function sound(src){
@@ -56,12 +58,23 @@ function sound(src){
     this.volume = function(vol){
       this.sound.volume = vol;
     }
+    this.remove = function(){
+        document.body.removeChild(this.sound)
+    }
 }
 
-function PlayThemeMusic(){
+function Musicadd(){
     soundGame = new sound("hula.ogg")
+}
+function PlayThemeMusic(){
     soundGame.loop()
 }
 function StopThemeMusic(){
     soundGame.stop()
+}
+function RemoveAudio(){
+    soundGame.remove()
+}
+function load(){
+    soundGame = new sound("hula.ogg")
 }

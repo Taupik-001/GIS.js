@@ -7,14 +7,13 @@
     background-image: url("SettingsBackground.png");
 }
 
-
 /* Tittle Settings */
 .WrapTittleSettings{
     top: 1961px;
     left: 578px;
 }
 .WrapLineTittleSettings{
-    top: 2035px;
+    top: 2015px;
     left: 578px;
 }
 .TittleSettings{
@@ -174,7 +173,6 @@
     height: 160px;
     background-image: url("WASD.png");
 }
-
 .keySelect{
     color: white;
     background-color: black;
@@ -197,7 +195,7 @@
 }
 
 
-/* Button Back Settings */
+/* Back Button */
 .WrapBackSettings{
     top: 1975px;
     left: 100px;
@@ -221,7 +219,6 @@
     height: 55px;
     border-radius: 5px;
 }
-
 
 /* Button Volume */
 .WrapMusicVolume{
@@ -268,7 +265,7 @@ input[type=range]{
 .SoundVolume[type=range]:focus {
     outline: none;
 }
-/* Circle*/
+/* Button Volume */
 .SoundVolume[type=range]::-webkit-slider-thumb {
     -webkit-appearance: none;
     height: 40px;
@@ -286,7 +283,7 @@ input[type=range]{
     background-image: url("ButtonSoundH.png");
     margin-top: -10px;
 }
-/* Parameter */
+/* Parameter Volume */
 .SoundVolume[type=range]:focus::-webkit-slider-runnable-track {
     background-image: url("Parameter1.png");
     height: 20px;

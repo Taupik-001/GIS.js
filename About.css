@@ -13,12 +13,23 @@
     left: 100px;
 }
 .HomeBtnOne{
-    color: transparent;
-    background-color: transparent;
-    border: hidden;
-    width: 60px;
-    height: 63px;
-    background-image: url("HomeButton.png");
+    background-image: url("BackButton.png");
+    width: 55px;
+    height: 55px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.HomeBtnOne:hover{
+    background-image: url("BackButton Hover.png");
+    width: 55px;
+    height: 55px;
+    border-radius: 5px;
+}
+.HomeBtnOne:active{
+    background-image: url("BackButton.png");
+    width: 55px;
+    height: 55px;
+    border-radius: 5px;
 }
 /* Button Next */
 .WrapNextBtnOne{
@@ -49,7 +60,6 @@
     height: 50px;
     background-image: url("NEXTBTNA.png");
 }
-
 
 /* Page Two About */
 /* Canvas Page Two */
@@ -131,7 +141,6 @@
     height: 50px;
     background-image: url("NEXTBTNA.png");
 }
-
 
 /* Page Three About */
 .WrapAboutPageThree{
